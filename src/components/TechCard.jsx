@@ -1,0 +1,3 @@
+import { BookOpen, Braces, Code2, Container, Database, GitBranch, Handshake, KeyRound, Landmark, Layers3, LockKeyhole, Network, PlugZap, Route, Send, ShieldCheck, TerminalSquare, UserRoundCheck, Webhook } from 'lucide-react'
+const iconMap = { BookOpen, Braces, Container, Database, GitBranch, Handshake, KeyRound, Landmark, Layers3, LockKeyhole, Network, PlugZap, Route, Send, ShieldCheck, TerminalSquare, UserRoundCheck, Webhook }
+export default function TechCard({ tech }) { const Icon = iconMap[tech.icon] || Code2; return <article className="tech-card"><span className="tech-icon"><Icon size={21} /></span><span>{tech.name}</span></article> }

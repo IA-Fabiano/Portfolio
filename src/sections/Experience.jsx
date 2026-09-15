@@ -1,0 +1,4 @@
+import { BriefcaseBusiness } from 'lucide-react'
+import SectionTitle from '../components/SectionTitle'
+import { portfolioData } from '../data/portfolioData'
+export default function Experience() { return <section id="experiencia" className="section-shell section"><SectionTitle eyebrow="CAMINHO PROFISSIONAL" title="Experiência" /><div className="timeline">{portfolioData.experience.map(item => <article className="timeline-item reveal" key={item.title}><div className="timeline-dot"><BriefcaseBusiness size={15} /></div><div className="timeline-card"><div><span className="timeline-company">{item.company}</span><h3>{item.title}</h3></div><p>{item.description}</p>{item.technologies.length > 0 && <div className="tag-list">{item.technologies.map(t => <span key={t}>{t}</span>)}</div>}</div></article>)}</div></section> }

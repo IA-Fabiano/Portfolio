@@ -1,0 +1,11 @@
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Hero from './sections/Hero'
+import FeaturedProject from './sections/FeaturedProject'
+import Projects from './sections/Projects'
+import Experience from './sections/Experience'
+import Education from './sections/Education'
+import TechStack from './sections/TechStack'
+import Contact from './sections/Contact'
+import MouseTrail from './components/MouseTrail'
+export default function App() { return <><MouseTrail /><Header /><main><Hero /><FeaturedProject /><Projects /><Experience /><Education /><TechStack /><Contact /></main><Footer /></> }

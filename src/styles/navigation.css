@@ -1,0 +1,63 @@
+.header.pill-header {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1128px, calc(100% - 48px));
+  height: 56px;
+  padding: 0;
+  gap: 20px;
+  border: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+.header.pill-header::before { content: none; }
+.pill-header .brand { margin-right: auto; }
+.pill-header .nav {
+  flex: 0 1 auto;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid #303b35;
+  border-radius: 999px;
+  background: rgba(15, 21, 18, .94);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 28px #0005, inset 0 1px 0 #ffffff09;
+}
+.pill-header .nav a {
+  position: relative;
+  padding: 11px 17px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #a5afa9;
+  font: 500 13px/1.2 var(--sans);
+  white-space: nowrap;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.pill-header .nav a::before { content: none; }
+.pill-header .nav a:hover { color: var(--text); background: #ffffff08; }
+.pill-header .nav a[aria-current] { color: var(--text); border-color: #38483f; background: #1b2620; }
+.pill-header .nav a[aria-current]::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+  left: 24%;
+  right: 24%;
+  border-radius: 2px;
+  background: var(--green);
+}
+.pill-header .cv-button { margin-left: auto; border-radius: 999px; padding: 11px 15px; background: #0d1410; white-space: nowrap; }
+.pill-header a:focus-visible, .pill-header button:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+main section[id] { scroll-margin-top: 105px; }
+@media (max-width: 1000px) {
+  .header.pill-header { gap: 12px; }
+  .pill-header .nav a { padding: 11px 12px; }
+  .pill-header .cv-button { display: none; }
+}
+@media (max-width: 690px) {
+  .header.pill-header { top: 12px; width: calc(100% - 32px); height: 52px; padding: 0 15px; border: 1px solid #303b35; border-radius: 999px; background: rgba(15,21,18,.96); }
+  .pill-header .menu-toggle { min-width: 40px; min-height: 40px; cursor: pointer; }
+  .pill-header .nav { top: 62px; left: 0; width: 100%; padding: 8px; border-radius: 24px; gap: 5px; }
+  .pill-header .nav a { padding: 14px 18px; }
+  .pill-header .nav a[aria-current]::after { display: none; }
+}
+
