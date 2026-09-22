@@ -6,20 +6,21 @@ export const portfolioData = {
   description: 'Desenvolvedor full stack focado em transformar requisitos em produtos e sistemas seguros, trabalhando com interfaces, APIs, autenticação, pagamentos, bancos de dados e integrações.',
   socialLinks: { email: '', linkedin: '', github: '', cv: '#' },
   featuredProject: {
-    name: 'SISINTERN',
-    subtitle: 'Sistema interno da Canvi',
-    description: 'Plataforma interna para gerenciamento de usuários, empresas, permissões, autenticação, auditoria e integrações com serviços de pagamento.',
+    name: 'Soluções corporativas',
+    subtitle: 'Projetos apresentados de forma conceitual',
+    description: 'Atuação em aplicações internas, autenticação, controle de acesso e integrações. Interfaces, dados e detalhes específicos foram preservados por confidencialidade.',
     technologies: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'JWT', 'RBAC', 'Swagger'],
   },
   experience: [
-    { title: 'Desenvolvedor Full Stack', company: 'Canvi', description: 'Desenvolvimento e manutenção de aplicações, APIs, autenticação, integrações com sistemas de pagamento, bancos de dados e sistemas internos. Desenvolvimento de soluções seguras, escaláveis e integração com serviços externos.', technologies: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'JWT', 'REST APIs'] },
+    { title: 'Desenvolvedor Full Stack', company: 'Canvi', period: 'dez/2024 – fev/2026', description: 'Desenvolvimento e manutenção de aplicações, APIs, autenticação, integrações com sistemas de pagamento, bancos de dados e sistemas internos. Desenvolvimento de soluções seguras, escaláveis e integração com serviços externos.', technologies: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'JWT', 'REST APIs'] },
+    { title: 'Estágio voluntário em desenvolvimento', company: 'Residuum', period: 'fev/2023 – nov/2024', description: 'Participação no desenvolvimento da plataforma da empresa, criando interfaces com Angular, JavaScript e Bootstrap e integrando funcionalidades com Node.js, Express e APIs REST. Colaboração com a equipe em ambiente ágil.', technologies: ['Angular', 'JavaScript', 'Bootstrap', 'Node.js', 'Express', 'REST APIs', 'Sequelize', 'MySQL', 'Google Cloud', 'Scrum'] },
     { title: 'Projetos pessoais e estudos', company: 'Em evolução contínua', description: 'Desenvolvimento de projetos próprios, automações e estudos contínuos em desenvolvimento full stack, arquitetura e novas tecnologias.', technologies: [] },
   ],
-  education: { title: 'Formação acadêmica', description: 'Adicione aqui sua graduação e cursos relevantes.' },
+  education: { title: 'Engenharia da Computação', description: 'Fametro · janeiro de 2019 a dezembro de 2023.' },
   projects: [
-    { title: 'Sistema de Autenticação', description: 'API de autenticação com login, JWT, 2FA/OTP, recuperação de senha e controle de sessão.', technologies: ['Node.js', 'Express', 'JWT', 'MySQL'], link: '#' },
-    { title: 'Integração Pix', description: 'Implementação de integração com APIs de pagamento para geração de Pix dinâmico, QR Code e consulta de status.', technologies: ['Node.js', 'REST API', 'OAuth', 'Pix', 'Webhooks'], link: '#' },
-    { title: 'Controle de acesso RBAC', description: 'Sistema de autorização baseado em perfis, módulos, componentes e funções.', technologies: ['Node.js', 'Express', 'Sequelize', 'MySQL', 'RBAC'], link: '#' },
+    { title: 'Autenticação e acesso', description: 'Desenvolvimento de fluxos de login, proteção de rotas e gerenciamento de sessões para aplicações corporativas.', technologies: ['Node.js', 'Express', 'JWT', 'MySQL'], visual: 'auth' },
+    { title: 'Integrações de pagamento', description: 'Integração entre serviços e APIs para acompanhar operações e processar respostas de pagamento.', technologies: ['Node.js', 'REST API', 'Webhooks', 'Pix'], visual: 'payments' },
+    { title: 'Gestão de permissões', description: 'Organização de perfis de acesso e regras de autorização em sistemas internos.', technologies: ['Node.js', 'Express', 'MySQL', 'RBAC'], visual: 'access' },
   ],
 }
 
