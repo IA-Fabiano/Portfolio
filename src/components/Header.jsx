@@ -42,6 +42,7 @@ export default function Header() {
     <nav id="main-navigation" aria-label="Navegação principal" className={open ? 'nav open' : 'nav'}>
       {links.map(([name, id]) => <a key={id} href={'#' + id} aria-current={active === id ? 'location' : undefined} onClick={close}>{name}</a>)}
       <a className="nav-contact" href="#contato" aria-current={active === 'contato' ? 'location' : undefined} onClick={close}>Conversar</a>
+      <a className="nav-cv" href={portfolioData.socialLinks.cv} download onClick={close}>Baixar CV</a>
     </nav>
     <a className="cv-button" href={portfolioData.socialLinks.cv} download><Download size={16} /> Baixar CV</a>
   </header>

@@ -45,6 +45,7 @@
   border-radius: 2px;
   background: var(--green);
 }
+.pill-header .nav .nav-cv { display: none; }
 .pill-header .cv-button { margin-left: auto; border-radius: 999px; padding: 11px 15px; background: #0d1410; white-space: nowrap; }
 .pill-header a:focus-visible, .pill-header button:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
 main section[id] { scroll-margin-top: 105px; }
@@ -52,6 +53,7 @@ main section[id] { scroll-margin-top: 105px; }
   .header.pill-header { gap: 12px; }
   .pill-header .nav a { padding: 11px 12px; }
   .pill-header .cv-button { display: none; }
+  .pill-header .nav .nav-cv { display: block; }
 }
 @media (max-width: 690px) {
   .header.pill-header { top: 12px; width: calc(100% - 32px); height: 52px; padding: 0 15px; border: 1px solid #303b35; border-radius: 999px; background: rgba(15,21,18,.96); }
