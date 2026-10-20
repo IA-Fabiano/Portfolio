@@ -4,7 +4,7 @@ export const portfolioData = {
   location: 'Manaus · Remoto',
   language: 'PT-BR',
   description: 'Desenvolvedor full stack focado em transformar requisitos em produtos e sistemas seguros, trabalhando com interfaces, APIs, autenticação, pagamentos, bancos de dados e integrações.',
-  socialLinks: { email: '', linkedin: '', github: '', cv: import.meta.env.BASE_URL + 'Curriculo_Fabiano_Carril_atualizado.pdf' },
+  socialLinks: { email: '', linkedin: '', github: '', cv: import.meta.env.BASE_URL + 'CV_Fabiano_Carril.pdf' },
   featuredProject: {
     name: 'Soluções corporativas',
     subtitle: 'Projetos apresentados de forma conceitual',
